@@ -23,3 +23,11 @@ print("Hello world")
 #         return sumCount(value - 1) + value; // рекурсивний виклик функції
 #
 # }
+
+################ 3 ################
+
+def sum_range(a, b):
+    if a > b:
+        return 0
+    return a + sum_range(a+1, b)
+print(sum_range(1, 5))
